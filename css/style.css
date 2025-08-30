@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;600;800&display=swap');
+:root{
+  --bg:#0F172A; --panel:#0C1428; --card:#101A33;
+  --text:#E5E7EB; --muted:#A3AEC2;
+  --gold:#FFD700; --gold2:#E6C200;
+  --border:#223059; --shadow:0 10px 30px rgba(0,0,0,.35);
+  --radius:16px;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif}
+img{max-width:100%;height:auto}
+a{color:var(--text);text-decoration:none}
+.container{max-width:1120px;margin:0 auto;padding:0 20px}
+
+.site-header{position:sticky;top:0;z-index:50;
+  background:linear-gradient(180deg,rgba(15,23,42,.95),rgba(15,23,42,.6));
+  border-bottom:1px solid rgba(148,163,184,.12);backdrop-filter:blur(6px)}
+.header-bar{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 0}
+
+.brand{display:flex;align-items:center;gap:14px}
+.brand-block{display:flex;flex-direction:column;align-items:flex-start;gap:6px}
+.brand__logo{width:56px;height:56px;border-radius:14px;
+  background:radial-gradient(circle at 30% 30%, #fff6 0, transparent 35%), linear-gradient(135deg, #ffe680, #b8860b);
+  box-shadow:0 0 0 2px #000 inset, 0 0 26px rgba(255,215,0,.35)}
+.brand__wordmark{font-family:'Playfair Display',serif;font-weight:800;
+  letter-spacing:.38em;color:var(--gold);
+  text-shadow:0 0 10px rgba(255,215,0,.7); font-size:22px; line-height:1}
+
+.header-actions{display:flex;align-items:center;gap:10px}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;
+  border-radius:999px;background:#0b1226;border:1px solid var(--border);font-weight:700}
+.pill img{width:18px;height:18px;border-radius:3px}
+
+.btn{border:0;border-radius:14px;padding:10px 16px;font-weight:800;
+  background:linear-gradient(180deg,var(--gold),var(--gold2));color:#1b1300;box-shadow:0 0 20px rgba(255,215,0,.35);cursor:pointer}
+.btn:hover{transform:translateY(-1px);box-shadow:0 8px 30px rgba(255,215,0,.5)}
+
+/* Burger gold with inner black bars; middle shorter */
+.burger{position:relative;width:56px;height:46px;border-radius:14px;
+  background:linear-gradient(180deg,var(--gold),var(--gold2));border:none;cursor:pointer;
+  box-shadow:0 0 20px rgba(255,215,0,.35)}
+.burger .bar{position:absolute;left:12px;right:12px;height:3px;background:#111;border-radius:2px;transition:.2s}
+.burger .bar:nth-child(1){top:11px}
+.burger .bar:nth-child(2){top:20px;left:18px;right:18px}
+.burger .bar:nth-child(3){bottom:11px}
+.burger.open .bar:nth-child(1){transform:translateY(9px) rotate(45deg)}
+.burger.open .bar:nth-child(2){opacity:0}
+.burger.open .bar:nth-child(3){transform:translateY(-9px) rotate(-45deg)}
+
+/* Drop navigation */
+.nav-panel{display:none}
+.nav-panel.open{display:block}
+.navgrid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;
+  padding:12px 0 18px}
+.navgrid a{background:#0b1226;border:1px solid var(--border);border-radius:12px;padding:12px;text-align:center;
+  transition:.15s;background-image:linear-gradient(180deg,transparent,rgba(255,215,0,.06))}
+.navgrid a:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+
+@media(max-width:900px){.navgrid{grid-template-columns:1fr}}
+
+/* Sections */
+.hero{padding:36px 0 14px;border-bottom:1px solid rgba(148,163,184,.12)}
+.hero h1{font-family:'Playfair Display',serif;font-size:42px;line-height:1.1;margin:0 0 10px}
+.hero p{color:var(--muted);font-size:18px;margin:0}
+
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:18px;margin:16px 0;box-shadow:var(--shadow)}
+.card h2{font-family:'Playfair Display',serif;font-size:26px;margin:0 0 8px}
+.subtle{color:var(--muted);font-size:14px}
+
+.grid2{display:grid;gap:16px;grid-template-columns:1fr 1fr}
+@media(max-width:900px){.grid2{grid-template-columns:1fr}}
+
+.input{width:100%;padding:12px 14px;border-radius:12px;border:1px solid var(--border);background:#0b1226;color:var(--text)}
+.result{font-weight:800;margin-top:8px}
+
+/* Footer */
+footer{border-top:1px solid rgba(148,163,184,.12);margin-top:32px}
+.foot{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 0}
+.brand-stack{display:flex;align-items:center;gap:10px}
+.brand-stack img{width:40px;height:40px;border-radius:10px}
+.brand-stack .word{font-family:'Playfair Display',serif;color:var(--gold);letter-spacing:.38em;text-shadow:0 0 10px rgba(255,215,0,.7)}
+.small a{color:#A3AEC2}
