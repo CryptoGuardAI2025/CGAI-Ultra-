@@ -1,0 +1,23 @@
+{
+  "nav_start": "Start",
+  "nav_crypto": "Krypto",
+  "nav_mindset": "Mindset",
+  "nav_shop": "Shop",
+  "nav_blog": "Blog",
+  "nav_about": "Über uns",
+  "hero_title": "Wir setzen den Maßstab für klare Entscheidungen im Kryptomarkt.",
+  "hero_sub": "Live‑Daten, geprüfte Informationen und konservative Modell‑Prognosen – Ehrlichkeit vor Hype.",
+  "who_title": "Wer wir sind",
+  "who_text": "CGAI baut ein Navigationssystem für Kryptomärkte. Fokus: robuste Prozesse, disziplinierte Regeln und nachvollziehbare Modelle. Keine Versprechen, keine Garantien.",
+  "disclaimer": "CGAI bietet keine Finanzberatung. Prognosen sind simulierte Szenarien.",
+  "crypto_title": "Krypto",
+  "crypto_chart": "Gesamtmarkt‑Chart (TradingView)",
+  "ai_badge": "KI‑Prognose (MVP)",
+  "ai_label": "Coin (btc, eth, xrp, sol, ada, ltc, doge, shib, vet, vtho …)",
+  "ai_btn": "Prognose berechnen",
+  "shop_title": "Shop",
+  "shop_hint": "Wähle eine Kategorie:",
+  "cat_beginner": "Anfänger",
+  "cat_trader": "Trader",
+  "cat_investor": "Investoren"
+}

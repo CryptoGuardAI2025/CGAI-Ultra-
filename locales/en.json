@@ -1,0 +1,23 @@
+{
+  "nav_start": "Home",
+  "nav_crypto": "Crypto",
+  "nav_mindset": "Mindset",
+  "nav_shop": "Shop",
+  "nav_blog": "Blog",
+  "nav_about": "About",
+  "hero_title": "We set the standard for clear decisions in the crypto market.",
+  "hero_sub": "Live data, vetted information and conservative model forecasts — honesty over hype.",
+  "who_title": "Who we are",
+  "who_text": "CGAI builds a navigation system for crypto markets. Focus: robust processes, disciplined rules and auditable models. No promises, no guarantees.",
+  "disclaimer": "CGAI does not provide financial advice. Forecasts are simulated scenarios.",
+  "crypto_title": "Crypto",
+  "crypto_chart": "Total market chart (TradingView)",
+  "ai_badge": "AI forecast (MVP)",
+  "ai_label": "Coin (btc, eth, xrp, sol, ada, ltc, doge, shib, vet, vtho …)",
+  "ai_btn": "Compute prediction",
+  "shop_title": "Shop",
+  "shop_hint": "Choose a category:",
+  "cat_beginner": "Beginners",
+  "cat_trader": "Traders",
+  "cat_investor": "Investors"
+}
